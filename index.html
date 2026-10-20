@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drag the Papers ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fce4ec;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Short Stack", cursive;
+  touch-action: pan-y;
+}
+
+.paper {
+  position: absolute;
+  width: min(310px, 84vw);
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px #0003;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.paper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-top: 10px;
+  pointer-events: none;
+}
+
+.paper p {
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.paper.letter {
+  width: min(440px, 90vw);
+  max-height: 78vh;
+  overflow-y: auto;
+  touch-action: pan-y;
+  cursor: auto;
+  user-select: text;
+  -webkit-user-select: text;
+  background: #fffdfd;
+}
+
+.letter h2 {
+  text-align: center;
+  color: #d6336c;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.letter p {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.letter .signature {
+  text-align: center;
+  color: #d6336c;
+  font-weight: bold;
+}
+
+.heart {
+  width: 65px;
+  height: 65px;
+  background: #ff1744;
+  transform: rotate(-45deg);
+  border-radius: 5px;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: #ff1744;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -32px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 32px;
+}
+
+@media (max-width: 600px) {
+  .paper {
+    width: min(260px, 82vw);
+    padding: 12px;
+  }
+
+  .paper p {
+    font-size: 13px;
+  }
+
+  .paper.letter {
+    width: 88vw;
+    max-height: 72vh;
+  }
+
+  .letter p {
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .letter h2 {
+    font-size: 18px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="paper heart" style="left:45%;top:10%;"></div>
+
+<div class="paper" style="left:8%;top:5%;transform:rotate(-5deg)">
+  <p>And I adore your</p>
+  <p>style and attitude 😍</p>
+  <img src="images/1.jpeg" alt="Photo 1">
+</div>
+
+<div class="paper" style="left:35%;top:12%;transform:rotate(4deg)">
+  <p>You look amazing...</p>
+  <img src="images/2.jpeg" alt="Photo 2">
+</div>
+
+<div class="paper" style="left:55%;top:18%;transform:rotate(-4deg)">
+  <p>How can someone be</p>
+  <p>so cute? ❤️</p>
+  <img src="images/3.jpg" alt="Photo 3">
+</div>
+
+<div class="paper" style="left:12%;top:40%;background:#ffebee">
+  <p>And so...</p>
+  <p>beautiful 😍</p>
+</div>
+
+<div class="paper" style="left:40%;top:45%">
+  <p>You are cute...</p>
+  <p>So mature and amazing ❤️</p>
+</div>
+
+<div class="paper" style="left:18%;top:65%">
+  <p>Drag the papers to move! 💌</p>
+  <p>There's something I need to tell you...</p>
+</div>
+
+<div class="paper letter" id="letter"
+     style="left:50%;top:50%;transform:translate(-50%,-50%);z-index:20">
+
+  <h2>Hey mam, ❤️‍🩹</h2>
+
+  <p>I don't even know how to start this, but I think you deserve to know the truth from me.</p>
+
+  <p>The person in those photos isn't me. I'm not the guy I showed you, and honestly, I don't even know him personally. I lied about my identity just because I wanted to have a conversation with a beautiful girl like you. I know how wrong that sounds, and I know there's no excuse for what I did. It was entirely my fault, and I'm genuinely sorry.</p>
+
+  <p>I know you probably won't ever want to talk to me again after this, and I understand that. You deleted the snaps too, and I know I don't deserve your trust anymore. I hurt you by lying to you, and I'm truly ashamed of myself. Using someone else's pictures and pretending to be them was wrong, and I promise I won't do anything like this again. I have changed my profile picture too.</p>
+
+  <p>The saddest part is that I know this might be our last conversation, and I have no right to ask you to stay. I just wanted to tell you the truth at least once, even if it means losing the chance to ever speak to you again.</p>
+
+  <p>But mam, one thing I want you to know is that <b>I never lied about the compliments I gave you.</b> Every beautiful thing I said about you came from my heart. You were the first girl who treated me with so much kindness, and I genuinely loved the way you made me feel. Maybe I didn't deserve that kindness, but I'll always appreciate it.</p>
+
+  <p>I'm not asking you to forget what I did or trust me again. If you can ever find it in your heart to forgive me, I'll be grateful. And if you can't, I'll understand that too.</p>
+
+  <p>May God always bless you, protect you from every evil, and give you all the happiness you deserve. ❤️ I genuinely hope you crack your upcoming NEET exam. You can do it, mam. Believe in yourself, work hard, and make yourself proud. I'll always wish the best for you, even if I can no longer be a part of your life.</p>
+
+  <p>Take care of yourself, mam. Keep smiling, keep shining, and never lose that beautiful heart of yours.</p>
+
+  <p>I'm really sorry for everything. I hope life gives you all the beautiful things you're working for.</p>
+
+  <p class="signature">Take care, mam. ❤️‍🩹</p>
+
+  <p>If you see this message, just drop a small reaction so I'll know you've read it. You don't have to reply. I won't force you to.</p>
+
+</div>
+
+<script>
+const papers = document.querySelectorAll(".paper:not(.letter)");
+let highestZ = 21;
+
+papers.forEach(paper => {
+  let dragging = false;
+  let offsetX = 0;
+  let offsetY = 0;
+
+  paper.addEventListener("pointerdown", e => {
+    dragging = true;
+    paper.setPointerCapture(e.pointerId);
+    highestZ++;
+    paper.style.zIndex = highestZ;
+
+    const rect = paper.getBoundingClientRect();
+    offsetX = e.clientX - rect.left;
+    offsetY = e.clientY - rect.top;
+
+    paper.style.cursor = "grabbing";
+  });
+
+  paper.addEventListener("pointermove", e => {
+    if (!dragging) return;
+
+    const maxX = window.innerWidth - paper.offsetWidth;
+    const maxY = window.innerHeight - paper.offsetHeight;
+
+    paper.style.left =
+      Math.max(0, Math.min(maxX, e.clientX - offsetX)) + "px";
+
+    paper.style.top =
+      Math.max(0, Math.min(maxY, e.clientY - offsetY)) + "px";
+  });
+
+  function stopDragging() {
+    dragging = false;
+    paper.style.cursor = "grab";
+  }
+
+  paper.addEventListener("pointerup", stopDragging);
+  paper.addEventListener("pointercancel", stopDragging);
+});
+
+const letter = document.getElementById("letter");
+
+// Keep the letter inside the visible screen on resize.
+function fitLetter() {
+  letter.style.left = "50%";
+  letter.style.top = "50%";
+  letter.style.transform = "translate(-50%, -50%)";
+}
+
+window.addEventListener("resize", fitLetter);
+</script>
+
+</body>
+</html>
